@@ -6,6 +6,7 @@ path = require('path');
 var app = express()
 server = require('http').createServer(app)
   
+
 app.use(express.static(path.join(__dirname, '/public')));
 app.set('view engine', 'ejs');
 //app.set('views', path.join(__dirname, '/views'));
@@ -29,4 +30,4 @@ app.get('*', (req, res)=>{
   res.render('/views/404.ejs')
 })
 
-server.listen(80, () => console.log(`App running on port ${80}`));
+server.listen(3000, "127.0.0.1");
