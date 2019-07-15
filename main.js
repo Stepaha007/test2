@@ -26,8 +26,6 @@ app.get('/tos', (req, res)=>{
   res.render('/views/tos.ejs')
 })
 
-app.get('*', (req, res)=>{
-  res.render('/views/404.ejs')
-})
+
 
 server.listen(3000, "127.0.0.1");
