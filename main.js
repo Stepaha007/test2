@@ -3,8 +3,8 @@ express = require('express'),
 cookieParser = require('cookie-parser'),
 bodyParser = require('body-parser'),
 path = require('path');
-var app = express()
-server = require('http').createServer(app)
+var app = express(),
+server = require('http').createServer(app);
   
 
 app.use(express.static(path.join(__dirname, '/public')));
